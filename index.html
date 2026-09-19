@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proposta digital da Kortex para a experiência de catálogo, atendimento e comunicação da Clami.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Proposta digital para a Clami</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101010'/%3E%3Cpath d='M17 16v32M17 32l25-16M17 32l27 16' stroke='%23f5f2ec' stroke-width='5' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <div class="transition-wipe" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="chrome">
+    <a class="wordmark" href="#inicio" aria-label="Voltar ao início">KORTEX <span>para Clami</span></a>
+    <div class="chrome-actions">
+      <button id="indexButton" class="text-button" type="button" aria-expanded="false" aria-controls="indexPanel">Índice</button>
+      <button id="fullscreenButton" class="icon-button" type="button" aria-label="Abrir em tela cheia" title="Tela cheia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <aside id="indexPanel" class="index-panel" aria-hidden="true">
+    <div class="index-head"><span>Navegação</span><button id="closeIndex" type="button" aria-label="Fechar índice">Fechar</button></div>
+    <nav aria-label="Índice da apresentação">
+      <a href="#inicio"><b>01</b> Abertura</a>
+      <a href="#diagnostico"><b>03</b> Diagnóstico</a>
+      <a href="#experiencia"><b>05</b> Nova experiência</a>
+      <a href="#atendimento"><b>12</b> Conteúdo e atendimento</a>
+      <a href="#entrega"><b>15</b> Entrega e operação</a>
+      <a href="#investimento"><b>20</b> Investimento</a>
+      <a href="#proximo-passo"><b>23</b> Próximo passo</a>
+    </nav>
+    <p>Use as setas do teclado, a roda do mouse ou deslize no celular.</p>
+  </aside>
+
+  <main id="deck">
+    <section id="inicio" class="scene scene-cover light" data-title="Proposta digital para a Clami">
+      <div class="cover-copy">
+        <p class="kicker">Setembro de 2026</p>
+        <h1>Proposta digital<br>para a Clami</h1>
+        <p class="lead">O catálogo, a experiência no celular e o atendimento ao cliente.</p>
+        <p class="legal">Proposta Kortex · Material para apresentação de Fernando à equipe Clami.</p>
+      </div>
+      <figure class="cover-image"><img src="woman-cutout-v2.png" alt="Modelo em vestido preto, branco e vermelho recortada sobre a composição editorial"></figure>
+      <span class="scene-number">01</span>
+    </section>
+
+    <section class="scene dark split" data-title="A Kortex e o projeto Clami">
+      <div>
+        <p class="kicker">Institucional</p>
+        <h2>A Kortex e o projeto Clami</h2>
+        <p class="statement">Tecnologia aplicada à experiência de compra.</p>
+      </div>
+      <div class="service-list">
+        <p>A proposta da Kortex conecta a apresentação das peças ao atendimento nas lojas, com conteúdo que a equipe consegue manter atualizado.</p>
+        <ol>
+          <li><b>Site e catálogo</b><span>Consulta às peças e painel de edição.</span></li>
+          <li><b>Marketing digital</b><span>Conteúdo sobre coleções e campanhas.</span></li>
+          <li><b>Atendimento com IA</b><span>Respostas com base aprovada e encaminhamento à equipe.</span></li>
+        </ol>
+      </div>
+      <span class="scene-number">02</span>
+    </section>
+
+    <section id="diagnostico" class="scene light diagnostic" data-title="Leitura no celular">
+      <div class="phone-sample long-copy" aria-hidden="true"><div class="mini-brand">clami</div><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="content-narrow">
+        <p class="kicker">Site atual / página sobre</p>
+        <h2>Leitura da história da Clami no celular</h2>
+        <h3>Texto de 14 px em uma coluna estreita</h3>
+        <p>Parágrafos longos seguem por várias telas. O vídeo ocupa espaço lateral e reduz a área de leitura.</p>
+        <div class="proposal"><b>Proposta</b><span>Resumo primeiro. Depois, a história completa. Letras maiores e blocos curtos para uma leitura mais confortável.</span></div>
+      </div>
+      <span class="scene-number">03</span>
+    </section>
+
+    <section class="scene light diagnostic reverse" data-title="Catálogo no celular">
+      <figure class="catalog-sample"><img src="old-catalog-mobile.png" alt="Captura do catálogo anterior da Clami no celular"><figcaption>Catálogo anterior · captura de referência</figcaption></figure>
+      <div class="content-narrow">
+        <p class="kicker">Site atual / catálogo</p>
+        <h2>Navegação do catálogo no celular</h2>
+        <h3>Uma peça por linha e filtro sobre o conteúdo</h3>
+        <p>A lista é longa. O filtro fixo concorre com os produtos na parte inferior da tela.</p>
+        <div class="proposal"><b>Proposta</b><span>Busca por nome, categorias visíveis e filtros fáceis de fechar fora da área das peças.</span></div>
+      </div>
+      <span class="scene-number">04</span>
+    </section>
+
+    <section id="experiencia" class="scene image-led light" data-title="A coleção ganha espaço">
+      <div>
+        <p class="kicker">Proposta / computador</p>
+        <h2>A coleção ganha espaço na apresentação</h2>
+        <p class="statement small">Fotografia maior. História, produtos e lojas em espaços identificáveis.</p>
+      </div>
+      <figure class="landscape"><img src="clami-home.webp" alt="Proposta de página inicial da Clami com fotografia ampla"></figure>
+      <span class="scene-number">05</span>
+    </section>
+
+    <section id="mobile" class="scene light mobile-pair" data-title="A mesma proposta no celular">
+      <div>
+        <p class="kicker">Proposta / experiência móvel</p>
+        <h2>A mesma proposta no celular</h2>
+        <p class="statement small">Entrada e coleção em uma grade pensada para toque, leitura e comparação.</p>
+        <p class="note">Na homologação: conferir tamanho dos textos, contraste e facilidade do toque com o público da Clami.</p>
+      </div>
+      <div class="device-stage" aria-label="Representação da experiência móvel">
+        <div class="device"><img src="new-home-mobile.png" alt="Captura da página inicial da demonstração no celular"></div>
+        <div class="device offset"><img src="new-catalog-mobile.png" alt="Captura do catálogo da demonstração no celular"></div>
+      </div>
+      <span class="scene-number">06</span>
+    </section>
+
+    <section class="scene light product-scene" data-title="Ficha do produto">
+      <div>
+        <p class="kicker">Proposta / produto</p>
+        <h2>A ficha do produto acompanha a tela</h2>
+        <p class="statement small">Imagem da peça, informações e contato no mesmo fluxo.</p>
+      </div>
+      <div class="product-layout">
+        <img src="bansang-model.webp" alt="Modelo tridimensional de mesa Bansang">
+        <div><span class="product-name">Bansang</span><p>Acabamentos, dimensões e materiais organizados para consulta.</p><span class="sample-cta">Conversar sobre esta peça</span><small class="note">Exemplo de interface</small></div>
+      </div>
+      <span class="scene-number">07</span>
+    </section>
+
+    <section class="scene light model-scene" data-title="Visualização do modelo 3D">
+      <div>
+        <p class="kicker">Proposta / demonstração</p>
+        <h2>Bansang: visualização do modelo 3D</h2>
+        <p>Referência visual do modelo ilustrativo. A proposta prevê giro e exploração dos detalhes no navegador.</p>
+      </div>
+      <figure><img src="bansang-model.webp" alt="Modelo ilustrativo 3D da mesa Bansang"></figure>
+      <p class="note">Modelo ilustrativo. Geometria e materiais finais dependem dos arquivos oficiais.</p>
+      <span class="scene-number">08</span>
+    </section>
+
+    <section class="scene light compare" data-title="Referência e fidelidade">
+      <div>
+        <p class="kicker">Bansang / fidelidade</p>
+        <h2>A referência real orienta o modelo</h2>
+      </div>
+      <div class="compare-grid">
+        <figure><figcaption>Fotografia oficial</figcaption><img src="bansang-reference.webp" alt="Fotografia de referência da mesa Bansang"></figure>
+        <figure><figcaption>Modelo ilustrativo, outro ângulo</figcaption><img src="bansang-model.webp" alt="Modelo ilustrativo da mesa Bansang"></figure>
+      </div>
+      <p class="note">O piloto permite avaliar forma e navegação. A publicação definitiva exige validar medidas, acabamentos e proporções com a Clami.</p>
+      <span class="scene-number">09</span>
+    </section>
+
+    <section class="scene dark journey" data-title="3D e realidade aumentada">
+      <div>
+        <p class="kicker">Proposta / experiência móvel</p>
+        <h2>Da peça ao ambiente</h2>
+      </div>
+      <div class="journey-line">
+        <div><b>01</b><span>Explorar a peça em 3D</span></div>
+        <div><b>02</b><span>Conferir detalhes e acabamento</span></div>
+        <div><b>03</b><span>Visualizar no próprio ambiente</span></div>
+      </div>
+      <p class="note">Em aparelhos compatíveis, “Ver em casa” abre a experiência pela câmera. Compatibilidade, escala e precisão exigem validação em celulares reais.</p>
+      <span class="scene-number">10</span>
+    </section>
+
+    <section class="scene light store-scene" data-title="Consulta às lojas">
+      <div>
+        <p class="kicker">Proposta / visita</p>
+        <h2>Consulta às lojas da Clami</h2>
+        <p class="statement small">Endereço e rota por unidade, no mesmo percurso de consulta.</p>
+        <p>O site proposto reúne as quatro lojas e permite encaminhar a peça de interesse e a unidade escolhida para o atendimento.</p>
+      </div>
+      <div class="store-list" aria-label="Quatro lojas da Clami"><span>Gabriel Monteiro da Silva</span><span>Pinheiros</span><span>Shopping Lar Center</span><span>D&amp;D Shopping</span></div>
+      <span class="scene-number">11</span>
+    </section>
+
+    <section id="atendimento" class="scene light content-scene" data-title="Instagram com pauta">
+      <div>
+        <p class="kicker">Conteúdo e trabalho</p>
+        <h2>Instagram com pauta, não volume</h2>
+        <ol class="editorial-list">
+          <li><b>Ambiente</b><span>A peça em contexto, com direção de arte.</span></li>
+          <li><b>Design e matéria</b><span>Detalhes, acabamentos e decisões de projeto.</span></li>
+          <li><b>História da Clami</b><span>Pessoas, autoria e repertório da marca.</span></li>
+          <li><b>Visita e atendimento</b><span>Loja, conversa e próximo passo claro.</span></li>
+        </ol>
+      </div>
+      <div class="content-board"><figure><img src="hero-patou.jpg" alt="Ambiente"><figcaption><span>01</span>Ambiente</figcaption></figure><figure><img src="unique-alma-0.jpg" alt="Design e matéria"><figcaption><span>02</span>Design e matéria</figcaption></figure><figure><img src="anniversary-original.jpg" alt="História da Clami"><figcaption><span>03</span>História da Clami</figcaption></figure><figure><img src="showroom-teodoro.jpg" alt="Visita à loja"><figcaption><span>04</span>Visita à loja</figcaption></figure></div>
+      <span class="scene-number">12</span>
+    </section>
+
+    <section class="scene light message-scene" data-title="Do primeiro contato à resposta">
+      <div>
+        <p class="kicker">Segundo Cérebro / WhatsApp</p>
+        <h2>Do primeiro contato à resposta certa</h2>
+        <blockquote>“A Bansang tem versão quadrada?”</blockquote>
+        <p>A IA consulta a base aprovada, responde com a linguagem definida pela Clami e registra o próximo passo.</p>
+        <p class="note">Busca → resposta → equipe. Exemplo de fluxo — não é uma mensagem já produzida.</p>
+      </div>
+      <div class="message-flow" aria-label="Fluxo de atendimento">
+        <div>Cliente<small>Pergunta sobre a peça</small></div><span></span><div>Base Clami<small>Informação aprovada</small></div><span></span><div>Equipe<small>Continua o atendimento</small></div>
+      </div>
+      <span class="scene-number">13</span>
+    </section>
+
+    <section class="scene dark brain-scene" data-title="O Segundo Cérebro da Clami">
+      <div>
+        <p class="kicker">IA / arquitetura proposta</p>
+        <h2>O Segundo Cérebro da Clami</h2>
+        <p class="statement small">Uma memória viva para o atendimento.</p>
+        <p>A IA consulta catálogo, histórico autorizado de mensagens e correções aprovadas para responder com o tom da Clami.</p>
+        <p>A base evolui com aprovação humana. O que não estiver confirmado vai para a equipe.</p>
+      </div>
+      <div class="knowledge-map" aria-label="Arquitetura proposta da base de conhecimento Clami"><div class="map-heading"><span>CLAMI / CONHECIMENTO</span><span>Arquitetura proposta</span></div><div class="knowledge-sources"><article><small>01 / CATÁLOGO</small><strong>Bansang</strong><span>Versões · medidas · acabamentos</span></article><article><small>02 / ATENDIMENTO</small><strong>Conversas autorizadas</strong><span>Dúvidas recorrentes · contexto</span></article><article><small>03 / MARCA</small><strong>Jeito Clami de atender</strong><span>Linguagem · orientações aprovadas</span></article></div><div class="knowledge-core"><span>BASE CLAMI</span><strong>Informação com origem.</strong><p>Consulta à fonte antes de responder.</p></div><div class="knowledge-answer"><small>EXEMPLO DE CONSULTA</small><strong>“A Bansang tem versão quadrada?”</strong><p>Localiza a ficha da peça e prepara a resposta. Medidas ou disponibilidade sem confirmação seguem para a equipe.</p></div><div class="knowledge-review">Equipe Clami revisa e aprova as atualizações</div></div>
+      <span class="scene-number">14</span>
+    </section>
+
+    <section id="entrega" class="scene light scope-scene" data-title="O site-base contempla">
+      <div>
+        <p class="kicker">Entregas do projeto</p>
+        <h2>O que o site-base contempla</h2>
+      </div>
+      <div class="scope-grid">
+        <article><b>Experiência e páginas</b><p>Layout para computador e celular, navegação pelo catálogo, ficha de produto e acesso às lojas.</p></article>
+        <article><b>Catálogo administrável</b><p>Até 120 produtos, painel de edição e dados organizados pela Clami.</p></article>
+        <article><b>Contato e publicação</b><p>WhatsApp, SEO básico e publicação após aprovação.</p></article>
+      </div>
+      <span class="scene-number">15</span>
+    </section>
+
+    <section id="etapas" class="scene light timeline-scene" data-title="Etapas e aprovações">
+      <div>
+        <p class="kicker">Plano proposto</p>
+        <h2>Etapas e pontos de aprovação</h2>
+      </div>
+      <ol class="timeline">
+        <li><b>Organização do acervo</b><span>Até 120 produtos, fotos, nomes, medidas e acabamentos.</span></li>
+        <li><b>Design e desenvolvimento</b><span>Telas para aprovação, catálogo e painel.</span></li>
+        <li><b>Conferência e lançamento</b><span>Revisão de produtos, contatos e publicação.</span></li>
+      </ol>
+      <p class="note">Prazo estimado: 10 a 14 semanas. A entrega pode ser antecipada conforme o recebimento dos materiais, as aprovações e a conclusão das etapas.</p>
+      <span class="scene-number">16</span>
+    </section>
+
+    <section class="scene dark criteria-scene" data-title="Critérios de aprovação">
+      <div>
+        <p class="kicker">Celular e atendimento</p>
+        <h2>Critérios para aprovar a experiência</h2>
+      </div>
+      <div class="criteria-grid">
+        <article><b>Leitura confortável</b><p>Textos sem zoom, contraste e ordem das informações em diferentes idades.</p></article>
+        <article><b>Ações fáceis de concluir</b><p>Encontrar uma peça, consultar detalhes e chegar ao contato da loja sem perder o contexto.</p></article>
+      </div>
+      <p class="note">Como avaliar: testar tarefas em celulares reais, registrar dúvidas e ajustar a interface antes da publicação.</p>
+      <span class="scene-number">17</span>
+    </section>
+
+    <section class="scene light aftercare" data-title="Após o lançamento">
+      <div>
+        <p class="kicker">Operação proposta</p>
+        <h2>O acompanhamento após o lançamento</h2>
+      </div>
+      <div class="aftercare-grid">
+        <article><b>Catálogo e manutenção</b><p>Correções e ajustes dentro das horas mensais contratadas. Novas funções exigem orçamento próprio.</p></article>
+        <article><b>Conteúdo e campanhas</b><p>Pautas com aprovação da Clami. Revisão dos contatos recebidos e das peças que despertam interesse.</p></article>
+      </div>
+      <div class="showroom-gallery"><figure><img src="showroom-gabriel.jpg" alt="Loja Clami Gabriel Monteiro da Silva"><figcaption>Gabriel Monteiro da Silva</figcaption></figure><figure><img src="showroom-teodoro.jpg" alt="Loja Clami Pinheiros"><figcaption>Pinheiros</figcaption></figure><figure><img src="showroom-dd.jpg" alt="Loja Clami D&D Shopping"><figcaption>D&D Shopping</figcaption></figure></div>
+      <span class="scene-number">18</span>
+    </section>
+
+    <section class="scene dark decisions" data-title="Decisões para fechar o ciclo">
+      <div>
+        <p class="kicker">Alinhamento com a Clami</p>
+        <h2>Pontos para avaliação da equipe</h2>
+      </div>
+      <div class="decision-grid">
+        <article><b>Produtos do lançamento</b><p>Definir até 120 produtos prioritários e a ordem do catálogo.</p></article>
+        <article><b>Materiais aprovados</b><p>Centralizar fotos, nomes, medidas, acabamentos e contatos das lojas.</p></article>
+        <article><b>Atendimento</b><p>Escolher o canal inicial da IA e quem atualiza a base de respostas.</p></article>
+        <article><b>Arquivos 3D e AR</b><p>Confirmar arquivos oficiais e produtos que entram no piloto.</p></article>
+      </div>
+      <p class="note">Após a avaliação interna, Fernando reúne o retorno da equipe para alinhar escopo, cronograma e proposta comercial com a Kortex.</p>
+      <span class="scene-number">19</span>
+    </section>
+
+    <section id="investimento" class="scene light pricing" data-title="Site e catálogo">
+      <div>
+        <p class="kicker">Investimento preliminar</p>
+        <h2>Site com painel de edição e catálogo</h2>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Opção</th><th>Investimento</th><th>Prazo indicativo</th></tr></thead>
+        <tbody>
+          <tr><td>Base com 30 produtos</td><td>R$ 9.900</td><td>8 a 12 semanas</td></tr>
+          <tr class="featured"><td>Primeiro ciclo até 120 produtos</td><td>R$ 11.900</td><td>10 a 14 semanas</td></tr>
+          <tr><td>Catálogo com 216 produtos</td><td>R$ 16.410</td><td>12 a 16 semanas</td></tr>
+          <tr><td>Produto além dos 30</td><td>R$ 35 por item</td><td>Conforme o volume</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Prazos estimados, com possibilidade de entrega antecipada conforme materiais, aprovações e conclusão das etapas. Inclui design, desenvolvimento, CMS, WhatsApp e SEO básico. Preço do ciclo de 120 é condição comercial de entrada para o primeiro ciclo, abaixo do cálculo unitário cheio. Adicional por item pressupõe textos, imagens e dados organizados.</p>
+      <span class="scene-number">20</span>
+    </section>
+
+    <section class="scene light pricing" data-title="Serviços mensais">
+      <div>
+        <p class="kicker">Investimento preliminar</p>
+        <h2>Serviços mensais</h2>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Serviço</th><th>Valor mensal</th><th>Volume incluído</th></tr></thead>
+        <tbody>
+          <tr><td>Conteúdo digital</td><td>R$ 2.000</td><td>8 publicações em 1 rede</td></tr>
+          <tr><td>Gestão de tráfego</td><td>R$ 1.200</td><td>1 plataforma, até 3 campanhas</td></tr>
+          <tr><td>Manutenção do site</td><td>R$ 600</td><td>Até 4 horas</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Conteúdo com materiais da Clami e uma rodada de ajustes. Foto, vídeo presencial, verba de mídia e criativos extras ficam separados.</p>
+      <span class="scene-number">21</span>
+    </section>
+
+    <section class="scene light pricing" data-title="Pilotos de IA e 3D">
+      <div>
+        <p class="kicker">Investimento preliminar</p>
+        <h2>Pilotos de IA e 3D</h2>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Serviço</th><th>Investimento</th><th>Escopo</th></tr></thead>
+        <tbody>
+          <tr><td>Implantação de IA</td><td>R$ 4.500</td><td>1 canal, base delimitada</td></tr>
+          <tr><td>Acompanhamento de IA</td><td>R$ 900 / mês</td><td>Até 6 horas mensais</td></tr>
+          <tr><td>Piloto 3D/AR</td><td>R$ 1.500 / peça</td><td>Após avaliação do arquivo</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">IA: canal, consumo e integrações especiais separados. 3D: preço final condicionado ao arquivo oficial e à complexidade.</p>
+      <span class="scene-number">22</span>
+    </section>
+
+    <section id="proximo-passo" class="scene dark closing" data-title="Proposta inicial">
+      <div>
+        <p class="kicker">Próximo ciclo</p>
+        <h2>Para avaliação: até 120 produtos</h2>
+        <p class="price">R$ 11.900</p>
+        <p class="statement small">Estimativa: 10 a 14 semanas</p><p class="note">A entrega pode ser antecipada conforme o envio dos materiais, as aprovações e a conclusão das etapas.</p>
+        <p>A Clami seleciona até 120 peças e entrega os materiais. A Kortex apresenta as páginas para aprovação, implementa o catálogo e prepara a publicação.</p>
+        <p class="payment">Condição sugerida: 40% na contratação, 30% na aprovação e 30% na entrega.</p>
+      </div>
+      <figure><img src="closing-sofa.webp" alt="Ambiente Clami com sofá e mobiliário"></figure>
+      <span class="scene-number">23</span>
+    </section>
+  </main>
+
+  <footer class="deck-controls" aria-label="Controles da apresentação">
+    <button id="prevButton" type="button" aria-label="Página anterior"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+    <span id="counter">01 / 23</span>
+    <button id="nextButton" type="button" aria-label="Próxima página"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+  </footer>
+  <script src="app.js?v=7"></script>
+</body>
+</html>
