@@ -69,3 +69,5 @@ document.querySelectorAll('[data-store]').forEach(button=>button.addEventListene
  document.getElementById('store-name').textContent=name;
  document.querySelectorAll('[data-store]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
 }));
+
+document.addEventListener('fullscreenchange',()=>{const active=!!document.fullscreenElement;const button=document.getElementById('fullscreenButton');button.querySelector('.fullscreen-label').textContent=active?'Sair da tela cheia':'Tela cheia';button.setAttribute('aria-label',active?'Sair da tela cheia':'Abrir em tela cheia');button.title=active?'Sair da tela cheia':'Abrir em tela cheia';});
