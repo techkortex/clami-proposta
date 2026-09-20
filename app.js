@@ -17,11 +17,6 @@ let transitionTimer;
 function go(delta){
   const next=Math.max(0,Math.min(activeIndex+delta,scenes.length-1));
   if(next===activeIndex)return;
-  document.body.classList.remove('is-changing');
-  void document.body.offsetWidth;
-  document.body.classList.add('is-changing');
-  clearTimeout(transitionTimer);
-  transitionTimer=setTimeout(()=>document.body.classList.remove('is-changing'),900);
   scenes[next].scrollIntoView({behavior:'smooth'});
 }
 let scrollFrame=0;
@@ -65,3 +60,12 @@ document.addEventListener('touchend',event=>{
 },{passive:true});
 
 update(0);
+
+const storeData=[['showroom-gabriel.jpg','Gabriel Monteiro da Silva'],['showroom-teodoro.jpg','Pinheiros'],['showroom-lar-center.jpg','Shopping Lar Center'],['showroom-dd.jpg','D&D Shopping']];
+document.querySelectorAll('[data-store]').forEach(button=>button.addEventListener('click',()=>{
+ const [photo,name]=storeData[Number(button.dataset.store)];
+ document.getElementById('store-photo').src=''+photo;
+ document.getElementById('store-photo').alt='Loja Clami '+name;
+ document.getElementById('store-name').textContent=name;
+ document.querySelectorAll('[data-store]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+}));
