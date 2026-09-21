@@ -216,3 +216,62 @@ html{scroll-snap-type:y proximity}
 @media(min-width:801px){
  :fullscreen .scene{min-height:100svh}
 }
+
+/* Mobile presentation safety: preserve the full title and keep chrome compact. */
+@media(max-width:800px){
+ .scene-cover h1{font-size:clamp(3.2rem,12vw,4.4rem);max-width:none;overflow-wrap:normal}
+}
+@media(max-width:600px){
+ .fullscreen-cta{width:44px;padding:0}
+ .fullscreen-cta .fullscreen-label{display:none}
+}
+
+/* Presentation mode — one complete scene per gesture, with restrained Clami motion. */
+@media(min-width:801px){
+ html{scroll-snap-type:y mandatory}
+ .scene,.scope-scene,.timeline-scene,.criteria-scene,.decisions,.pricing,.compare{min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always;padding-top:clamp(84px,10vh,108px);padding-bottom:clamp(66px,8vh,88px)}
+ .scene-cover{min-height:100svh;padding-top:74px;padding-bottom:42px}
+ .scene-cover .cover-image{height:min(76vh,690px);overflow:visible;display:flex;align-items:center;justify-content:center}
+ .scene-cover .cover-image img{width:116%;max-width:none;height:116%;object-fit:contain;object-position:center bottom}
+ .content-board figcaption{font-size:clamp(15px,1vw,17px);padding:16px 14px;min-height:54px}
+ .content-board figcaption span{font-size:12px;font-weight:600}
+}
+
+.scene.light{background-color:var(--paper);background-image:linear-gradient(118deg,rgba(255,255,255,.5),transparent 38%,rgba(75,67,56,.035) 100%)}
+.scene.dark{background-color:var(--ink);background-image:linear-gradient(122deg,rgba(255,255,255,.025),transparent 44%,rgba(255,255,255,.012) 100%)}
+
+.knowledge-flow{display:grid;grid-template-columns:1fr auto 1.15fr auto 1fr;align-items:center;gap:12px;margin-top:26px;padding:22px;border:1px solid #66665e;background:#242421;text-align:center}
+.knowledge-flow span,.knowledge-flow strong{font-size:clamp(12px,1vw,15px);line-height:1.35}
+.knowledge-flow strong{font-weight:500;color:#fff}
+.knowledge-flow i{font-style:normal;color:#aaa99f}
+.knowledge-review{padding-top:18px;font-size:12px;line-height:1.55}
+.negotiable{max-width:46ch;padding:15px 18px;border-left:3px solid #aaa89f;background:rgba(255,255,255,.055);font-size:clamp(15px,1.1vw,18px);line-height:1.45}
+.fullscreen-cta.is-active{background:#f1efe9;color:#171716;border-color:#b8b6af}
+
+body::after{content:"";position:fixed;inset:0;z-index:39;pointer-events:none;opacity:0;transform:translateX(-120%);background:linear-gradient(104deg,transparent 0 44%,rgba(247,245,239,.22) 49.7%,rgba(25,25,23,.08) 50%,transparent 56%)}
+body.is-transitioning::after{animation:editorial-sweep .86s cubic-bezier(.65,0,.2,1) both!important}
+
+@media(prefers-reduced-motion:no-preference){
+ .scene.is-active .cover-image img{animation:cover-breathe 7s ease-in-out infinite alternate!important}
+ .scene.is-active .content-board figure:nth-child(odd) img{animation:image-drift-a 9s ease-in-out infinite alternate!important}
+ .scene.is-active .content-board figure:nth-child(even) img{animation:image-drift-b 10s ease-in-out infinite alternate!important}
+ .scene.is-active .knowledge-flow strong{animation:quiet-focus 3.8s ease-in-out infinite!important}
+ .scene.is-active .featured td{background-size:210% 100%;animation:table-sheen 7s ease-in-out infinite!important}
+ .scene.is-active.closing figure img{animation:closing-drift 10s ease-in-out infinite alternate!important}
+ .scene.is-active .kicker{animation:kicker-breathe 5s ease-in-out infinite!important}
+}
+
+@keyframes editorial-sweep{0%{opacity:0;transform:translateX(-120%)}22%{opacity:1}100%{opacity:0;transform:translateX(120%)}}
+@keyframes cover-breathe{from{transform:translate3d(-1.2%,.6%,0) scale(1.18)}to{transform:translate3d(1.2%,-.6%,0) scale(1.24)}}
+@keyframes image-drift-a{from{transform:scale(1)}to{transform:scale(1.035) translate3d(-.5%,.5%,0)}}
+@keyframes image-drift-b{from{transform:scale(1.025) translate3d(.4%,-.3%,0)}to{transform:scale(1)}}
+@keyframes quiet-focus{0%,100%{opacity:.78}50%{opacity:1;text-shadow:0 0 20px rgba(255,255,255,.18)}}
+@keyframes table-sheen{0%,100%{background-position:100% 50%}50%{background-position:0 50%}}
+@keyframes closing-drift{from{transform:scale(1.01)}to{transform:scale(1.045) translate3d(-.5%,-.35%,0)}}
+@keyframes kicker-breathe{0%,100%{opacity:.78}50%{opacity:1}}
+
+@media(max-width:800px){
+ .knowledge-flow{grid-template-columns:1fr;gap:8px;padding:18px}
+ .knowledge-flow i{transform:rotate(90deg)}
+ .negotiable{font-size:15px}
+}

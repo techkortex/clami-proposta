@@ -7,10 +7,10 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Proposta digital para a Clami</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101010'/%3E%3Cpath d='M17 16v32M17 32l25-16M17 32l27 16' stroke='%23f5f2ec' stroke-width='5' fill='none'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
-  
+
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
   <header class="chrome">
     <a class="wordmark" href="#inicio" aria-label="Voltar ao início">KORTEX <span>para Clami</span></a>
@@ -201,7 +201,16 @@
         <p>A IA consulta catálogo, histórico autorizado de mensagens e correções aprovadas para responder com o tom da Clami.</p>
         <p>A base evolui com aprovação humana. O que não estiver confirmado vai para a equipe.</p>
       </div>
-      <div class="knowledge-map" aria-label="Arquitetura proposta da base de conhecimento Clami"><div class="map-heading"><span>CLAMI / CONHECIMENTO</span><span>Arquitetura proposta</span></div><div class="knowledge-sources"><article><small>01 / CATÁLOGO</small><strong>Bansang</strong><span>Versões · medidas · acabamentos</span></article><article><small>02 / ATENDIMENTO</small><strong>Conversas autorizadas</strong><span>Dúvidas recorrentes · contexto</span></article><article><small>03 / MARCA</small><strong>Jeito Clami de atender</strong><span>Linguagem · orientações aprovadas</span></article></div><div class="knowledge-core"><span>BASE CLAMI</span><strong>Informação com origem.</strong><p>Consulta à fonte antes de responder.</p></div><div class="knowledge-answer"><small>EXEMPLO DE CONSULTA</small><strong>“A Bansang tem versão quadrada?”</strong><p>Localiza a ficha da peça e prepara a resposta. Medidas ou disponibilidade sem confirmação seguem para a equipe.</p></div><div class="knowledge-review">Equipe Clami revisa e aprova as atualizações</div></div>
+      <div class="knowledge-map" aria-label="Como a IA consulta informações aprovadas da Clami">
+        <div class="map-heading"><span>BASE CLAMI</span><span>Fluxo proposto</span></div>
+        <div class="knowledge-sources">
+          <article><small>01</small><strong>Catálogo</strong><span>Versões, medidas e acabamentos.</span></article>
+          <article><small>02</small><strong>Atendimento autorizado</strong><span>Dúvidas recorrentes e contexto.</span></article>
+          <article><small>03</small><strong>Tom da marca</strong><span>Linguagem e orientações aprovadas.</span></article>
+        </div>
+        <div class="knowledge-flow"><span>Pergunta do cliente</span><i aria-hidden="true">→</i><strong>Consulta às fontes</strong><i aria-hidden="true">→</i><span>Resposta ou equipe</span></div>
+        <div class="knowledge-review">Se faltar confirmação, a IA não inventa: encaminha para a equipe Clami.</div>
+      </div>
       <span class="scene-number">13</span>
     </section>
 
@@ -268,13 +277,13 @@
       <div class="table-wrap"><table>
         <thead><tr><th>Opção</th><th>Investimento</th><th>Prazo indicativo</th></tr></thead>
         <tbody>
-          <tr><td>Base com 30 produtos</td><td>R$ 9.900</td><td>8 a 12 semanas</td></tr>
-          <tr class="featured"><td>Primeiro ciclo até 120 produtos</td><td>R$ 11.900</td><td>10 a 14 semanas</td></tr>
-          <tr><td>Catálogo com 216 produtos</td><td>R$ 16.410</td><td>12 a 16 semanas</td></tr>
-          <tr><td>Produto além dos 30</td><td>R$ 35 por item</td><td>Conforme o volume</td></tr>
+          <tr><td>Base com 30 produtos</td><td>R$ 8.600,00</td><td>8 a 12 semanas</td></tr>
+          <tr class="featured"><td>Primeiro ciclo até 120 produtos</td><td>R$ 9.387,50</td><td>10 a 14 semanas</td></tr>
+          <tr><td>Catálogo com 216 produtos</td><td>R$ 10.227,50</td><td>12 a 16 semanas</td></tr>
+          <tr><td>Produto além dos 30</td><td>R$ 8,75 por item</td><td>Conforme o volume</td></tr>
         </tbody>
       </table></div>
-      <p class="note">Prazos estimados, com possibilidade de entrega antecipada conforme materiais, aprovações e conclusão das etapas. Inclui design, desenvolvimento, CMS, WhatsApp e SEO básico. Preço do ciclo de 120 é condição comercial de entrada para o primeiro ciclo, abaixo do cálculo unitário cheio. Adicional por item pressupõe textos, imagens e dados organizados.</p>
+      <p class="note">Cálculo transparente: R$ 8.600 pelo site-base com 30 produtos + R$ 8,75 por produto adicional. Inclui design, desenvolvimento, painel de edição, WhatsApp e SEO básico, considerando textos, imagens e dados organizados pela Clami. Valores preliminares: estamos abertos a propostas e ajustes de escopo.</p>
       <span class="scene-number">18</span>
     </section>
 
@@ -305,10 +314,10 @@
         <tbody>
           <tr><td>Implantação de IA</td><td>R$ 4.500</td><td>1 canal, base delimitada</td></tr>
           <tr><td>Acompanhamento de IA</td><td>R$ 900 / mês</td><td>Até 6 horas mensais</td></tr>
-          <tr><td>Piloto 3D/AR</td><td>R$ 1.500 / peça</td><td>Após avaliação do arquivo</td></tr>
+          <tr><td>Piloto 3D/AR (1 peça)</td><td>R$ 1.500 / peça</td><td>Teste navegável antes de ampliar</td></tr>
         </tbody>
       </table></div>
-      <p class="note">IA: canal, consumo e integrações especiais separados. 3D: preço final condicionado ao arquivo oficial e à complexidade.</p>
+      <p class="note">O piloto 3D/AR é um teste com uma peça para validar qualidade visual, giro em 3D e visualização no ambiente antes de decidir uma implantação maior. O preço final depende do arquivo oficial e da complexidade. IA: consumo e integrações especiais ficam separados.</p>
       <span class="scene-number">20</span>
     </section>
 
@@ -316,9 +325,10 @@
       <div>
         <p class="kicker">Próximo ciclo</p>
         <h2>Para avaliação: até 120 produtos</h2>
-        <p class="price">R$ 11.900</p>
+        <p class="price">R$ 9.387,50</p>
         <p class="statement small">Estimativa: 10 a 14 semanas</p><p class="note">A entrega pode ser antecipada conforme o envio dos materiais, as aprovações e a conclusão das etapas.</p>
         <p>A Clami seleciona até 120 peças e entrega os materiais. A Kortex apresenta as páginas para aprovação, implementa o catálogo e prepara a publicação.</p>
+        <p class="negotiable">Referência inicial: estamos abertos a propostas e a ajustar escopo, etapas e condições com a Clami.</p>
         <p class="payment">Condição sugerida: 40% na contratação, 30% na aprovação e 30% na entrega.</p>
       </div>
       <figure><img src="closing-sofa.webp" alt="Ambiente Clami com sofá e mobiliário"></figure>
@@ -331,6 +341,6 @@
     <span id="counter">01 / 21</span>
     <button id="nextButton" type="button" aria-label="Próxima página"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
   </footer>
-  <script src="app.js?v=10"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>
